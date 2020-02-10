@@ -1,5 +1,5 @@
 public class Node {
-    private char val;
+    private int val;
     private Node left;
     private Node right;
 
@@ -10,7 +10,7 @@ public class Node {
         right = null;
     }
 
-    public Node(char val)
+    public Node(int val)
     {
         this.val = val;
         left = null;
@@ -51,8 +51,34 @@ public class Node {
     public String toString()
     {
         if(this != null)
-                return Character.toString(val);
+                return Integer.toString(val);
         else return "x";
     }
 
+    public static int index ;
+
+    public static Node deserialize(String s)
+    {
+
+        Node n = new Node(Integer.parseInt(s.charAt(index) + ""));
+
+
+        if(s.length() > index + 1)
+        {
+            index++;
+            if(s.charAt(index ) == 'x')
+                n.setLeft(null);
+            else n.setLeft(Node.deserialize(s));
+        }
+
+        if(s.length() > index + 1)
+        {
+            index++;
+            if(s.charAt(index ) == 'x')
+                n.setRight(null);
+            else n.setRight(Node.deserialize(s));
+        }
+
+        return n;
+    }
 }
