@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1581356777 source:c:\users\teo\desktop\info\dailycodingproblems\problem 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
