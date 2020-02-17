@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1581968768 source:c:\users\teo\desktop\info\dailycodingproblems\day 8\day8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
