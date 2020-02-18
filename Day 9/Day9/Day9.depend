@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582031190 source:c:\users\teo\desktop\info\dailycodingproblems\day 9\day9\main.c
+	<stdio.h>
+	<stdlib.h>
+
