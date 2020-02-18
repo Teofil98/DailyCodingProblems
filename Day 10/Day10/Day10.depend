@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1582032107 source:c:\users\teo\desktop\info\dailycodingproblems\day 10\day10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
